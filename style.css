@@ -6,6 +6,7 @@
             background-image: url("360_F_495712232_AUVLEd6sO0OyAaxDouhO9mszwroYEviz.jpg");
             margin: 0;
             padding: 0;
+            cursor: crosshair;
         }
 
         .main-container {
@@ -15,9 +16,9 @@
             padding: 20px;
             background-color: #ffffff;
             border: 10px solid #ffffff;
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 15px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -10px 40px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -29px 50px 0px inset,
                 rgba(0, 0, 0, 0.06) 0px 2px 1px,
                 rgba(0, 0, 0, 0.09) 0px 4px 2px,
                 rgba(0, 0, 0, 0.09) 0px 8px 4px,
@@ -135,6 +136,16 @@
     max-width: 90vw;
 }
 
+.bigbox {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 850px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
 .gif {
     width: 200px;
     height: auto;
@@ -177,4 +188,15 @@
 .top-nav ul li.active a {
     background-color: #333;
     color: #fff;
+}
+
+ul.key-topics {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.key-topics li::before {
+    content: "• ";
+    color: #333;
+    font-weight: bold;
 }
