@@ -10,7 +10,7 @@
 
         .main-container {
             width: 90%;
-            max-width: 1500px;
+            max-width: 1600px;
             margin: 20px auto;
             padding: 20px;
             background-color: #ffffff;
@@ -123,4 +123,58 @@
     .info-text {
         align-items: center;
     }
+}
+
+.wide-box {
+    width: 500px;
+    max-width: 90vw;
+}
+
+.wider-box {
+    width: 400px;
+    max-width: 90vw;
+}
+
+.gif {
+    width: 200px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    align-self: flex-start;
+    display: block;
+}
+
+.top-nav {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.top-nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.top-nav ul li.active a {
+    background-color: #333;
+    color: #fff;
 }
